@@ -7,19 +7,19 @@ public class Point {
     private int ordonnee;
 
     //constructeur par defaut
-    Point() {
+    public Point() {
         this.abscisse = 0;
         this.ordonnee = 0;
     }
 
     //constructeur de point symetrique
-    Point(int x) {
+    public Point(int x) {
         this.abscisse = x;
         this.ordonnee = x;
     }
 
     //constructeur
-    Point(int x, int y) {
+    public Point(int x, int y) {
         this.abscisse = x;
         this.ordonnee = y;
     }
@@ -29,14 +29,13 @@ public class Point {
         return abscisse;
     }
 
+    public void setAbscisse(int abscisse) {
+        this.abscisse = abscisse;
+    }
 
     //retoune la valeur de l'axe des y
     public int getOrdonnee() {
         return ordonnee;
-    }
-
-    public void setAbscisse(int abscisse) {
-        this.abscisse = abscisse;
     }
 
     public void setOrdonnee(int ordonnee) {
@@ -44,16 +43,16 @@ public class Point {
     }
 
     //calcule de limage
-    public Point symetrie(Point point) {
+    public Point symetrie() {
 
-        Point image = new Point(-point.getAbscisse(), point.getOrdonnee());
-        return image;
+        return new Point(-abscisse, ordonnee);
+
     }
 
 
     //affichage du point (x,y)
     @Override
     public String toString() {
-        return "(" + getAbscisse() + ";" + getOrdonnee() + ")";
+        return "(" + abscisse + ";" + ordonnee + ")";
     }
 }

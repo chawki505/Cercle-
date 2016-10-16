@@ -21,12 +21,12 @@ public class Cercle {
         return centre;
     }
 
-    public Segment getRayon() {
-        return rayon;
-    }
-
     public void setCentre(Point centre) {
         this.centre = centre;
+    }
+
+    public Segment getRayon() {
+        return rayon;
     }
 
     public void setRayon(Segment rayon) {
@@ -41,14 +41,14 @@ public class Cercle {
         return this.rayon.distance() * this.rayon.distance() * Math.PI;
     }
 
-    public String symetrie(Cercle cercle) {
+    public Cercle symetrie() {
 
-        Cercle image = new Cercle(cercle.getCentre().symetrie(cercle.getCentre()), cercle.getRayon().symetrie(cercle.getRayon()));
-        return "centre" + image.getCentre().toString() + ", rayon=" + image.getRayon().distance()+"/ Segment"+image.rayon.toString();
+        return new Cercle(centre.symetrie(), rayon.symetrie());
+
     }
 
     @Override
     public String toString() {
-        return "Segment"+rayon.toString()+  " centre" + getCentre().toString() + ", rayon=" + getRayon().distance();
+        return "rayon" + rayon.toString() + ", centre" + centre.toString() + ", |rayon|=" + rayon.distance() + ", Perimetre = " + perimetre() + ", Surface = " + surface();
     }
 }
