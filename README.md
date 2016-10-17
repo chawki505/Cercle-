@@ -1,3 +1,3 @@
-# Cercle-
-# Segment-
-# Point-
+# Cercle  o
+# Segment - 
+# Point   .
