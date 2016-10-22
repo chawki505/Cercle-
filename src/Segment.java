@@ -10,6 +10,7 @@ public class Segment {
     public Segment(Point point) {
 
         this.point2 = point; //pourquoi ne pas faire appel au constructeur point(x,y) directement ici
+                             // oui je sais j'aurais pu faire directement ,mais j'avais l'idée que un cercle construit un segment et un segment construit un point et un point construit le x et le y 
     }
 
     //constructeur pour un segment AB avec A(xa,ya) et B(xb,yb)
