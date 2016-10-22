@@ -9,7 +9,7 @@ public class Cercle {
     public Cercle() {
         this.centre = new Point();
 
-    }
+    } /*mieux le supprimer vu qu'un cercle est conçu à partir d'un  point centre et un rayon est donc r=0 n'a aucun sens */
 
     public Cercle(Point centre, Segment rayon) {
         this.centre = centre;
@@ -51,4 +51,17 @@ public class Cercle {
     public String toString() {
         return "rayon" + rayon.toString() + ", centre" + centre.toString() + ", |rayon|=" + rayon.distance() + ", Perimetre = " + perimetre() + ", Surface = " + surface();
     }
+    
+    /*remarque le fait de mettre rayon est suffisant sans mettre explicitement .toString()
+    
+    exemple
+    =======
+    
+      public String toString() {
+        return "Cercle{" + "rayon=" + rayon + ", c=" + c + '}';
+    }
+    
+    
+    
+    */
 }
