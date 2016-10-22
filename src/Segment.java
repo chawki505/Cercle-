@@ -9,13 +9,14 @@ public class Segment {
     //constructeur pour un segment OM avec O(0,0) et M(x,y)
     public Segment(Point point) {
 
-        this.point2 = point;
+        this.point2 = point; //pourquoi ne pas faire appel au constructeur point(x,y) directement ici
+                             // oui je sais j'aurais pu faire directement ,mais j'avais l'idée que un cercle construit un segment et un segment construit un point et un point construit le x et le y 
     }
 
     //constructeur pour un segment AB avec A(xa,ya) et B(xb,yb)
     public Segment(Point point1, Point point2) {
         this.point1 = point1;
-        this.point2 = point2;
+        this.point2 = point2; //meme chose ici 
 
     }
 
@@ -51,3 +52,19 @@ public class Segment {
         return "[" + point1.toString() + point2.toString() + "]";
     }
 }
+/*Exemple 
+
+public class Segment {
+    private Point a;
+    private Point b;
+
+    public Segment(double bx, double by) {
+        this.a = new Point();
+        this.b = new Point(bx, by);
+    }
+
+    public Segment(double ax, double ay, double bx, double by) {
+        this.a = new Point(ax, ay);
+        this.b = new Point(bx, by);
+    }
+*/
