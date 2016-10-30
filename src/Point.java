@@ -55,4 +55,12 @@ public class Point {
     public String toString() {
         return "(" + abscisse + ";" + ordonnee + ")";
     }
+
+
+
+    public void deplace(int dx, int dy) {
+        abscisse += dx;
+        ordonnee += dy;
 }
+}
+
