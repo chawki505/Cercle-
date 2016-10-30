@@ -19,10 +19,15 @@ public class Main {
         Cercle cercle2 = new Cercle(B, BC);
 
 
+
+        System.out.println("\n---UPDATE----");
+
         PointNom point1 = new PointNom("X", 10, 5);
         PointNom point2 = new PointNom("Y", 2);
 
-        System.out.println("---UPDATE----");
+        PointA p = new PointA(10);
+
+
 
         System.out.println("Avant:");
         point1.afficheCor();//afficher le point
@@ -35,7 +40,7 @@ public class Main {
         point1.afficheCor();//afficher le nouveau deplacement
         point2.afficheCor();
 
-        System.out.println("---UPDATE----");
+        System.out.println("---UPDATE----\n");
 
         System.out.println("A" + A.toString() + "\nB" + B.toString() + "\nC" + C.toString());
         System.out.println("\nimage de A = A-1" + A.symetrie().toString() + "\nimage de B = B-1" + B.symetrie().toString() + "\nimage de C = C-1" + C.symetrie().toString());
