@@ -2,10 +2,15 @@
 /**
  * Created by chawki on 14/10/16.
  */
+
+//import java.util.*;
 public class Point {
     private int abscisse;
     private int ordonnee;
-
+/*
+Scanner key = new Scanner(System.in);
+double C;
+*/
     //constructeur par defaut
     public Point() {
         this.abscisse = 0;
@@ -48,8 +53,20 @@ public class Point {
         return new Point(-abscisse, ordonnee);
 
     }
-
-
+ /*
+   ------------------------------------------------------------------------
+   | Création d'une methode qui lit les Coordonnée d'un point donnee       |
+   |_______________________________________________________________________|
+   | public void mesCoord(){                                               |
+   |            System.out.println("Donner l'Abcisse du point ");          |
+   |			C=key.nextDouble();                                        |
+   |			setAbcisse(C);                                             |
+   |			System.out.println("Donner l'Ordonnee du point ");         |
+   |		    C=key.nextDouble();                                        |
+   |		    setOrdonnee(C);                                            |
+   |	}                                                                  |
+    ------------------------------------------------------------------------
+    */
     //affichage du point (x,y)
     @Override
     public String toString() {
