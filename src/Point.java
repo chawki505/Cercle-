@@ -7,7 +7,10 @@
 public class Point {
     private int abscisse;
     private int ordonnee;
-
+/*
+Scanner key = new Scanner(System.in);
+double C;
+*/
     //constructeur par defaut
     public Point() {
         this.abscisse = 0;
@@ -55,12 +58,12 @@ public class Point {
    | Création d'une methode qui lit les Coordonnée d'un point donnee       |
    |_______________________________________________________________________|
    | public void mesCoord(){                                               |
-   |         System.out.println("Donner l'Abcisse du point ");             |
+   |            System.out.println("Donner l'Abcisse du point ");          |
    |			C=key.nextDouble();                                        |
    |			setAbcisse(C);                                             |
    |			System.out.println("Donner l'Ordonnee du point ");         |
-   |		C=key.nextDouble();                                            |
-   |		setOrdonnee(C);                                                |
+   |		    C=key.nextDouble();                                        |
+   |		    setOrdonnee(C);                                            |
    |	}                                                                  |
     ------------------------------------------------------------------------
     */
