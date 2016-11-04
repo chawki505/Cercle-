@@ -1,15 +1,20 @@
 /**
  * Created by chawki on 15/10/16.
  */
+//import java.util.*;
 public class Main {
 
 
     public static void main(String[] args) {
-
+        /* Scanner key= new Scanner(System.in);
+           double V = key.nextDouble();
+        */
         Point A = new Point();
         Point B = new Point(5, 5);
         Point C = new Point(3, 8);
-
+        /*
+        Sinon tu crée une methode dans point qui lit les abcisses et les Ordonnee d'un Point 
+        */
 
 
         Segment AB = new Segment(A, B);
